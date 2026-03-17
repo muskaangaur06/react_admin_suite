@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 import "./topbar.css";
-import { NotificationsNone, Search, SettingsOutlined, KeyboardArrowDown, CheckCircleOutline, InfoOutlined, WarningAmber } from "@material-ui/icons";
+import { NotificationsNone, Search, SettingsOutlined, KeyboardArrowDown, CheckCircleOutline, InfoOutlined, ReportProblemOutlined } from "@material-ui/icons";
 
 const notifications = [
     { id: 1, icon: <CheckCircleOutline />, type: "success", text: "New order #4521 confirmed", time: "2 min ago" },
     { id: 2, icon: <InfoOutlined />, type: "info", text: "User James Carter updated profile", time: "15 min ago" },
-    { id: 3, icon: <WarningAmber />, type: "warning", text: "Low stock: Redmi Note 12 (32 left)", time: "1 hr ago" },
+    { id: 3, icon: <ReportProblemOutlined />, type: "warning", text: "Low stock: Redmi Note 12 (32 left)", time: "1 hr ago" },
     { id: 4, icon: <CheckCircleOutline />, type: "success", text: "Monthly report is ready", time: "3 hrs ago" },
 ];
 
