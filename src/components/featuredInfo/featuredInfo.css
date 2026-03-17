@@ -1,0 +1,90 @@
+.featured {
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px 0;
+}
+
+.featuredItem {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.featuredItem:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.featuredTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.featuredTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.featuredIconWrap {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featuredIconWrap svg {
+    font-size: 20px !important;
+}
+
+.featuredMoneyContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.featuredMoney {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.featuredMoneyRate {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.featuredMoneyRate.positive {
+    background-color: var(--success-bg);
+    color: var(--success);
+}
+
+.featuredMoneyRate.negative {
+    background-color: var(--error-bg);
+    color: var(--error);
+}
+
+.featuredIcon {
+    font-size: 13px !important;
+}
+
+.featuredSubtitle {
+    font-size: 12px;
+    color: var(--text-light);
+}

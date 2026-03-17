@@ -1,0 +1,213 @@
+.user {
+    flex: 1;
+    padding: 20px;
+}
+
+.userTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.userTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.userAddButton {
+    border: none;
+    padding: 8px 18px;
+    background-color: var(--logo-color);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    transition: opacity 0.15s;
+}
+
+.userAddButton:hover {
+    opacity: 0.85;
+}
+
+.userContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.userDisplay {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 24px;
+}
+
+.userUpdate {
+    flex: 2;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 24px;
+}
+
+.userDisplayTop {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0ebe3;
+}
+
+.userDisplayImg {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userDisplayTopTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.userDisplayUsername {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.userDisplayUserTitle {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.userDisplayBottom {
+    margin-top: 20px;
+}
+
+.userDisplayTitle {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 16px 0 8px;
+}
+
+.userDisplayInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    color: var(--text-dark);
+    font-size: 14px;
+}
+
+.userDisplayIcon {
+    font-size: 16px !important;
+    color: var(--logo-color);
+}
+
+.userUpdateTitle {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.userUpdateForm {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.userUpdateLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.userUpdateItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.userUpdateItem > label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.userUpdateInput {
+    border: none;
+    border-bottom: 1.5px solid #e0d8cc;
+    padding: 6px 2px;
+    font-size: 14px;
+    color: var(--text-dark);
+    background: transparent;
+    outline: none;
+    transition: border-color 0.15s;
+}
+
+.userUpdateInput:focus {
+    border-bottom-color: var(--logo-color);
+}
+
+.userUpdateRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.userUpdateUpload {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.userUpdateImg {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.userUpdateIconLabel {
+    cursor: pointer;
+    color: var(--logo-color);
+    display: flex;
+    align-items: center;
+}
+
+.userUpdateIcon {
+    font-size: 22px !important;
+    color: var(--logo-color);
+}
+
+.userUpdateButton {
+    border: none;
+    padding: 9px 24px;
+    border-radius: 8px;
+    background-color: var(--logo-color);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.userUpdateButton:hover {
+    opacity: 0.85;
+}

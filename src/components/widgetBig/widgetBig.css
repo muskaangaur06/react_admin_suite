@@ -1,0 +1,114 @@
+.widgetBig {
+    flex: 2;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+.widgetBigHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.widgetBigTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.widgetBigViewAll {
+    border: none;
+    background: var(--icon-widget-bg);
+    color: var(--chart-color);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.widgetBigViewAll:hover {
+    background: #dcdcf0;
+}
+
+.widgetBigTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.widgetBigTable th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #f5f0eb;
+}
+
+.widgetBigTable td {
+    padding: 12px 0;
+    border-bottom: 1px solid #f9f6f2;
+    vertical-align: middle;
+}
+
+.widgetBigTable tr:last-child td {
+    border-bottom: none;
+}
+
+.widgetBigUser {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.widgetBigImg {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.widgetBigDate {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.widgetBigAmount {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.statusBadge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.statusBadge.accept {
+    background-color: var(--success-bg);
+    color: var(--success);
+}
+
+.statusBadge.decline {
+    background-color: var(--error-bg);
+    color: var(--error);
+}
+
+.statusBadge.pending {
+    background-color: var(--info-bg);
+    color: var(--info);
+}

@@ -1,0 +1,107 @@
+.productList {
+    flex: 1;
+    padding: 20px;
+}
+
+.productListHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.productListHeader h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.productListAdd {
+    border: none;
+    padding: 8px 18px;
+    background-color: var(--logo-color);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    transition: opacity 0.15s;
+}
+
+.productListAdd:hover {
+    opacity: 0.85;
+}
+
+.productListGrid {
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    height: 540px;
+    padding: 8px;
+}
+
+.productListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.productListImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.productListActions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.productListEdit {
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    background-color: var(--btn-green);
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: opacity 0.15s;
+}
+
+.productListEdit:hover {
+    opacity: 0.85;
+}
+
+.productListDelete {
+    color: var(--error);
+    cursor: pointer;
+    font-size: 18px !important;
+    transition: color 0.15s;
+}
+
+.statusChip {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.statusChip.active {
+    background-color: var(--success-bg);
+    color: var(--success);
+}
+
+.statusChip.low-stock {
+    background-color: #fff8e1;
+    color: #f59e0b;
+}
+
+.statusChip.out-of-stock {
+    background-color: var(--error-bg);
+    color: var(--error);
+}

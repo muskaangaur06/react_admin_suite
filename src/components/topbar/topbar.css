@@ -1,0 +1,296 @@
+.topbar {
+    width: 100%;
+    height: 60px;
+    background-color: var(--topbar-bg);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 1px 4px rgba(179, 163, 179, 0.3);
+}
+
+.topbarWrapper {
+    height: 100%;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.topLeft .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--logo-color);
+    cursor: pointer;
+    letter-spacing: -0.5px;
+}
+
+.topCenter {
+    flex: 1;
+    max-width: 420px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f0eb;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 7px 14px;
+    gap: 8px;
+    transition: border-color 0.2s;
+}
+
+.searchBar:focus-within {
+    border-color: var(--chart-color);
+    background-color: #fff;
+}
+
+.searchIcon {
+    font-size: 18px !important;
+    color: var(--text-light);
+}
+
+.searchBar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 100%;
+    color: var(--text-dark);
+}
+
+.searchBar input::placeholder {
+    color: var(--text-light);
+}
+
+.topRight {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.topbarIconContainer {
+    position: relative;
+}
+
+.iconBtn {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-mid);
+    transition: background 0.15s;
+}
+
+.iconBtn:hover {
+    background-color: #f5f0eb;
+    color: var(--logo-color);
+}
+
+.topIconBadge {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: var(--error);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    border: 2px solid white;
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    z-index: 1000;
+    overflow: hidden;
+    animation: fadeDown 0.15s ease;
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.notifDropdown {
+    width: 320px;
+}
+
+.dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.markRead {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--chart-color);
+    cursor: pointer;
+}
+
+.notifDropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notifItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.notifItem:hover {
+    background-color: #f9f6f2;
+}
+
+.notifIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.notifItem.success .notifIcon { background-color: var(--success-bg); color: var(--success); }
+.notifItem.info .notifIcon { background-color: var(--info-bg); color: var(--info); }
+.notifItem.warning .notifIcon { background-color: #fff8e1; color: #f59e0b; }
+
+.notifIcon svg { font-size: 16px !important; }
+
+.notifText p {
+    font-size: 13px;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+    line-height: 1.4;
+}
+
+.notifText span {
+    font-size: 11px;
+    color: var(--text-light);
+}
+
+.profileWrap {
+    position: relative;
+}
+
+.profileTrigger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: background 0.15s;
+}
+
+.profileTrigger:hover {
+    background-color: #f5f0eb;
+}
+
+.topAvatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--sidebar-active);
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.profileName {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.profileRole {
+    font-size: 11px;
+    color: var(--text-light);
+}
+
+.profileDropdown {
+    width: 220px;
+    right: 0;
+}
+
+.profileDropHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    background-color: #faf7f4;
+}
+
+.profileDropHeader img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileDropHeader strong {
+    display: block;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.profileDropHeader span {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.profileDropdown ul {
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+}
+
+.profileDropdown li {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: var(--text-mid);
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.profileDropdown li:hover {
+    background-color: #f9f6f2;
+    color: var(--logo-color);
+}
+
+.logoutItem {
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+    color: var(--error) !important;
+}

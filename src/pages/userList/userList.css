@@ -1,0 +1,111 @@
+.userList {
+    flex: 1;
+    padding: 20px;
+}
+
+.userListHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.userListHeader h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.userListAdd {
+    border: none;
+    padding: 8px 18px;
+    background-color: var(--logo-color);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    transition: opacity 0.15s;
+}
+
+.userListAdd:hover {
+    opacity: 0.85;
+}
+
+.userListGrid {
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    height: 540px;
+    padding: 8px;
+}
+
+.userListUser {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userListImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userListActions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.userListEdit {
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    background-color: var(--btn-green);
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: opacity 0.15s;
+}
+
+.userListEdit:hover {
+    opacity: 0.85;
+}
+
+.userListDelete {
+    color: var(--error);
+    cursor: pointer;
+    font-size: 18px !important;
+    transition: color 0.15s;
+}
+
+.userListDelete:hover {
+    color: #b02060;
+}
+
+.statusChip {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.statusChip.active {
+    background-color: var(--success-bg);
+    color: var(--success);
+}
+
+.statusChip.inactive {
+    background-color: #f5f0eb;
+    color: var(--text-light);
+}
+
+.statusChip.pending {
+    background-color: var(--info-bg);
+    color: var(--info);
+}

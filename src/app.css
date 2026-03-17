@@ -1,0 +1,45 @@
+:root {
+    --sidebar-bg: rgb(238, 229, 215);
+    --sidebar-active: rgb(231, 205, 167);
+    --sidebar-text: #555;
+    --sidebar-title: rgb(148, 147, 147);
+    --logo-color: rgb(114, 61, 30);
+    --topbar-bg: #ffffff;
+    --shadow: 0 2px 8px rgba(179, 163, 179, 0.5);
+    --shadow-md: 3px 4px 10px 0px rgba(179, 163, 179, 0.7);
+    --chart-color: #5550BD;
+    --success: #3bb077;
+    --success-bg: #e5faf2;
+    --error: #d95087;
+    --error-bg: #fff0f1;
+    --info: #2a7ade;
+    --info-bg: #ebf1fe;
+    --btn-green: rgb(116, 201, 116);
+    --btn-teal: rgb(129, 172, 157);
+    --btn-brown: rgb(167, 111, 111);
+    --btn-red: rgb(168, 95, 95);
+    --icon-widget-bg: #eeeef7;
+    --text-dark: #2e2e2e;
+    --text-mid: #555;
+    --text-light: rgb(148, 147, 147);
+    --border: #e8e0d8;
+    --bg-page: #f7f3ee;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-page);
+}
+
+.container {
+    display: flex;
+    margin-top: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
