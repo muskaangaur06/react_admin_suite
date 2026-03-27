@@ -8,24 +8,24 @@ const menuGroups = [
         items: [
             { label: "Dashboard", icon: <LineStyle />, path: "/" },
             { label: "Experiments", icon: <Timeline />, path: "/experiments" },
-            { label: "Model Registry", icon: <Assessment />, path: null },
+            { label: "Model Registry", icon: <Assessment />, path: "/model-registry" },
         ],
     },
     {
         title: "Analysis",
         items: [
             { label: "Datasets", icon: <Storage />, path: "/datasets" },
-            { label: "Feature Store", icon: <Category />, path: null },
-            { label: "Visualizations", icon: <BubbleChart />, path: null },
-            { label: "Statistics", icon: <TableChart />, path: null },
+            { label: "Feature Store", icon: <Category />, path: "/feature-store" },
+            { label: "Visualizations", icon: <BubbleChart />, path: "/visualizations" },
+            { label: "Statistics", icon: <TableChart />, path: "/statistics" },
         ],
     },
     {
         title: "ML Pipeline",
         items: [
-            { label: "Training", icon: <TrendingUp />, path: null },
-            { label: "Hyperparameters", icon: <Tune />, path: null },
-            { label: "Metrics", icon: <BarChart />, path: null },
+            { label: "Training", icon: <TrendingUp />, path: "/training" },
+            { label: "Hyperparameters", icon: <Tune />, path: "/hyperparameters" },
+            { label: "Metrics", icon: <BarChart />, path: "/metrics" },
         ],
     },
 ];
@@ -48,10 +48,8 @@ export default function Sidebar() {
                                         {item.label}
                                     </li>
                                 );
-                                return item.path ? (
+                                return (
                                     <Link to={item.path} className="link" key={item.label}>{content}</Link>
-                                ) : (
-                                    <span key={item.label}>{content}</span>
                                 );
                             })}
                         </ul>
