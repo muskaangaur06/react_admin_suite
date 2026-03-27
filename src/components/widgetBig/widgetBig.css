@@ -1,9 +1,10 @@
 .widgetBig {
     flex: 2;
     background: white;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: var(--shadow);
     padding: 20px;
+    border: 1px solid var(--border);
 }
 
 .widgetBigHeader {
@@ -14,25 +15,9 @@
 }
 
 .widgetBigTitle {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     color: var(--text-dark);
-}
-
-.widgetBigViewAll {
-    border: none;
-    background: var(--icon-widget-bg);
-    color: var(--chart-color);
-    font-size: 12px;
-    font-weight: 600;
-    padding: 5px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.15s;
-}
-
-.widgetBigViewAll:hover {
-    background: #dcdcf0;
 }
 
 .widgetBigTable {
@@ -61,31 +46,29 @@
     border-bottom: none;
 }
 
-.widgetBigUser {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.expId {
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
+    color: var(--chart-color);
+}
+
+.expDataset {
+    font-size: 11px;
+    color: var(--text-light);
+    margin-top: 2px;
+}
+
+.expModel {
+    font-size: 12px;
+    font-weight: 500;
     color: var(--text-dark);
 }
 
-.widgetBigImg {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.widgetBigDate {
-    font-size: 13px;
-    color: var(--text-light);
-}
-
-.widgetBigAmount {
+.expMetric {
     font-size: 14px;
     font-weight: 700;
     color: var(--text-dark);
+    font-variant-numeric: tabular-nums;
 }
 
 .statusBadge {
@@ -98,17 +81,17 @@
     letter-spacing: 0.3px;
 }
 
-.statusBadge.accept {
+.statusBadge.best {
     background-color: var(--success-bg);
     color: var(--success);
 }
 
-.statusBadge.decline {
-    background-color: var(--error-bg);
-    color: var(--error);
-}
-
-.statusBadge.pending {
+.statusBadge.good {
     background-color: var(--info-bg);
     color: var(--info);
+}
+
+.statusBadge.baseline {
+    background-color: #f5f0eb;
+    color: var(--text-light);
 }

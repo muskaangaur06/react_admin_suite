@@ -1,11 +1,11 @@
 import "./featuredInfo.css";
-import { ArrowDownward, ArrowUpward, AttachMoney, ShoppingCartOutlined, PeopleAltOutlined, TrendingUp } from "@material-ui/icons";
+import { ArrowDownward, ArrowUpward, Assessment, Storage, TrendingUp, Speed } from "@material-ui/icons";
 
 const stats = [
-    { title: "Revenue", value: "$24,560", rate: "+12.4%", positive: true, sub: "vs last month", icon: <AttachMoney />, color: "#5550BD" },
-    { title: "Sales", value: "1,842", rate: "+8.2%", positive: true, sub: "vs last month", icon: <ShoppingCartOutlined />, color: "var(--btn-teal)" },
-    { title: "Active Users", value: "8,400", rate: "-3.1%", positive: false, sub: "vs last month", icon: <PeopleAltOutlined />, color: "var(--logo-color)" },
-    { title: "Growth Rate", value: "18.6%", rate: "+2.3%", positive: true, sub: "vs last month", icon: <TrendingUp />, color: "var(--success)" },
+    { title: "Best R² Score", value: "0.9364", rate: "+2.1%", positive: true, sub: "XGBoost (Tuned)", icon: <Assessment />, color: "#5550BD" },
+    { title: "Datasets", value: "4", rate: "+1 new", positive: true, sub: "474K+ total records", icon: <Storage />, color: "var(--btn-teal)" },
+    { title: "Experiments", value: "42", rate: "+5 this week", positive: true, sub: "across 3 projects", icon: <TrendingUp />, color: "var(--logo-color)" },
+    { title: "Avg RMSE", value: "57.55", rate: "-8.4%", positive: true, sub: "improved from baseline", icon: <Speed />, color: "var(--success)" },
 ];
 
 export default function FeaturedInfo() {

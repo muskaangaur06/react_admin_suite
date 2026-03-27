@@ -1,0 +1,89 @@
+.experimentsPage {
+    flex: 4;
+    padding: 24px;
+}
+
+.pageTitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.pageSubtitle {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 24px;
+}
+
+.expTableWrap {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    border: 1px solid var(--border);
+}
+
+.expFullTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expFullTable th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--border);
+}
+
+.expFullTable td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #f5f0eb;
+    font-size: 13px;
+    color: var(--text-dark);
+}
+
+.expIdCell {
+    font-weight: 700;
+    color: var(--chart-color);
+}
+
+.expModelCell {
+    font-weight: 600;
+}
+
+.expMetricCell {
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.expDateCell {
+    color: var(--text-light);
+}
+
+.expStatus {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.expStatus.best {
+    background: var(--success-bg);
+    color: var(--success);
+}
+
+.expStatus.good {
+    background: var(--info-bg);
+    color: var(--info);
+}
+
+.expStatus.baseline {
+    background: #f5f0eb;
+    color: var(--text-light);
+}

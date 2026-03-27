@@ -1,95 +1,101 @@
 .widgetSmall {
     flex: 1;
     background: white;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
+    border-radius: 12px;
     padding: 20px;
+    box-shadow: var(--shadow);
     margin-right: 20px;
+    border: 1px solid var(--border);
 }
 
 .widgetSmallHeader {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 16px;
 }
 
 .widgetSmallTitle {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     color: var(--text-dark);
 }
 
-.widgetSmallSeeAll {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--chart-color);
-}
-
-.widgetSmallList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.widgetSmallListItem {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 0;
-    border-bottom: 1px solid #f5f0eb;
-}
-
-.widgetSmallListItem:last-child {
-    border-bottom: none;
-}
-
-.widgetSmallImg {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.widgetSmallUser {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.widgetSmallUsername {
+.modelTable {
+    width: 100%;
+    border-collapse: collapse;
     font-size: 13px;
+}
+
+.modelTable thead th {
+    text-align: left;
     font-weight: 600;
+    color: var(--text-light);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.modelTable tbody tr {
+    border-bottom: 1px solid #f0ece6;
+}
+
+.modelTable tbody td {
+    padding: 10px 8px;
     color: var(--text-dark);
 }
 
-.widgetSmallUsertitle {
-    font-size: 11px;
-    color: var(--text-light);
-}
-
-.widgetSmallBtn {
+.modelName {
     display: flex;
     align-items: center;
-    gap: 4px;
-    border: none;
-    border-radius: 6px;
-    padding: 5px 10px;
-    background-color: var(--icon-widget-bg);
-    color: var(--chart-color);
-    cursor: pointer;
-    font-size: 12px;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.modelRank {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
+
+.rank1 { background: #ccc; }
+.rank2 { background: #ccc; }
+.rank3 { background: #cd7f32; }
+.rank4 { background: #c0c0c0; }
+.rank5 { background: #5550BD; }
+
+.modelMetric {
     font-weight: 600;
-    white-space: nowrap;
-    transition: background 0.15s;
+    font-variant-numeric: tabular-nums;
 }
 
-.widgetSmallBtn:hover {
-    background-color: #dcdcf0;
+.modelBadge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
 }
 
-.widgetSmallIcon {
-    font-size: 14px !important;
+.modelBadge.best {
+    background: var(--success-bg);
+    color: var(--success);
+}
+
+.modelBadge.good {
+    background: var(--info-bg);
+    color: var(--info);
+}
+
+.modelBadge.baseline {
+    background: #f5f0eb;
+    color: var(--text-light);
 }

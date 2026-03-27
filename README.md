@@ -1,6 +1,6 @@
 # React Admin Suite
 
-A professional, fully interactive admin dashboard built with React 18. Features a warm beige sidebar theme, real-time charts, data tables, and complete user and product management pages.
+This project started as a 3-year-old basic admin template and has been fully rebuilt into a professional, interactive dashboard. The original theme — beige sidebar, brown logo, purple-blue charts — was kept and polished with modern React practices, real data, and interactive UI components.
 
 ## Pages
 

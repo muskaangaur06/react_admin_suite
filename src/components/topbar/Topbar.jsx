@@ -3,10 +3,10 @@ import "./topbar.css";
 import { NotificationsNone, Search, SettingsOutlined, KeyboardArrowDown, CheckCircleOutline, InfoOutlined, ReportProblemOutlined } from "@material-ui/icons";
 
 const notifications = [
-    { id: 1, icon: <CheckCircleOutline />, type: "success", text: "New order #4521 confirmed", time: "2 min ago" },
-    { id: 2, icon: <InfoOutlined />, type: "info", text: "User James Carter updated profile", time: "15 min ago" },
-    { id: 3, icon: <ReportProblemOutlined />, type: "warning", text: "Low stock: Redmi Note 12 (32 left)", time: "1 hr ago" },
-    { id: 4, icon: <CheckCircleOutline />, type: "success", text: "Monthly report is ready", time: "3 hrs ago" },
+    { id: 1, icon: <CheckCircleOutline />, type: "success", text: "XGBoost model training complete (R²=0.94)", time: "2 min ago" },
+    { id: 2, icon: <InfoOutlined />, type: "info", text: "New dataset version uploaded: FBI Crime v2", time: "15 min ago" },
+    { id: 3, icon: <ReportProblemOutlined />, type: "warning", text: "Data drift detected in sensor_rolling_mean_12", time: "1 hr ago" },
+    { id: 4, icon: <CheckCircleOutline />, type: "success", text: "Experiment EXP-042 logged to MLflow", time: "3 hrs ago" },
 ];
 
 export default function Topbar() {
@@ -36,7 +36,7 @@ export default function Topbar() {
         <div className="topbar">
             <div className="topbarWrapper">
                 <div className="topLeft">
-                    <span className="logo">Admin Suite</span>
+                    <span className="logo">DS Analytics</span>
                 </div>
 
                 <div className="topCenter">
@@ -44,7 +44,7 @@ export default function Topbar() {
                         <Search className="searchIcon" />
                         <input
                             type="text"
-                            placeholder="Search users, products..."
+                            placeholder="Search models, datasets, experiments..."
                             value={searchVal}
                             onChange={e => setSearchVal(e.target.value)}
                         />
@@ -88,8 +88,8 @@ export default function Topbar() {
                         <div className="profileTrigger" onClick={() => { setShowProfile(!showProfile); setShowNotifs(false); }}>
                             <img src="https://i.pravatar.cc/150?img=47" alt="avatar" className="topAvatar" />
                             <div className="profileInfo">
-                                <span className="profileName">Anna Marrie</span>
-                                <span className="profileRole">Admin</span>
+                                <span className="profileName">Muskaan Gaur</span>
+                                <span className="profileRole">Data Scientist</span>
                             </div>
                             <KeyboardArrowDown fontSize="small" />
                         </div>
@@ -98,14 +98,14 @@ export default function Topbar() {
                                 <div className="profileDropHeader">
                                     <img src="https://i.pravatar.cc/150?img=47" alt="" />
                                     <div>
-                                        <strong>Anna Marrie</strong>
-                                        <span>admin@adminsuite.com</span>
+                                        <strong>Muskaan Gaur</strong>
+                                        <span>muskaan@dsanalytics.io</span>
                                     </div>
                                 </div>
                                 <ul>
                                     <li>My Profile</li>
                                     <li>Settings</li>
-                                    <li>Billing</li>
+                                    <li>API Keys</li>
                                     <li className="logoutItem">Sign Out</li>
                                 </ul>
                             </div>

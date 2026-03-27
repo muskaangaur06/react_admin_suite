@@ -1,39 +1,31 @@
 import "./sidebar.css";
-import { LineStyle, Timeline, TrendingUp, PermIdentity, Storefront, AttachMoney, BarChart, MailOutline, DynamicFeed, ChatBubbleOutline, WorkOutline, Report } from "@material-ui/icons";
+import { LineStyle, Timeline, TrendingUp, BarChart, Assessment, Storage, BubbleChart, Category, TableChart, Tune } from "@material-ui/icons";
 import { Link, useLocation } from "react-router-dom";
 
 const menuGroups = [
     {
-        title: "Dashboard",
+        title: "Overview",
         items: [
-            { label: "Home", icon: <LineStyle />, path: "/" },
-            { label: "Analytics", icon: <Timeline />, path: null },
-            { label: "Sales", icon: <TrendingUp />, path: null },
+            { label: "Dashboard", icon: <LineStyle />, path: "/" },
+            { label: "Experiments", icon: <Timeline />, path: "/experiments" },
+            { label: "Model Registry", icon: <Assessment />, path: null },
         ],
     },
     {
-        title: "Quick Menu",
+        title: "Analysis",
         items: [
-            { label: "Users", icon: <PermIdentity />, path: "/users" },
-            { label: "Products", icon: <Storefront />, path: "/products" },
-            { label: "Transactions", icon: <AttachMoney />, path: null },
-            { label: "Reports", icon: <BarChart />, path: null },
+            { label: "Datasets", icon: <Storage />, path: "/datasets" },
+            { label: "Feature Store", icon: <Category />, path: null },
+            { label: "Visualizations", icon: <BubbleChart />, path: null },
+            { label: "Statistics", icon: <TableChart />, path: null },
         ],
     },
     {
-        title: "Notifications",
+        title: "ML Pipeline",
         items: [
-            { label: "Mail", icon: <MailOutline />, path: null },
-            { label: "Feedback", icon: <DynamicFeed />, path: null },
-            { label: "Messages", icon: <ChatBubbleOutline />, path: null },
-        ],
-    },
-    {
-        title: "Staff",
-        items: [
-            { label: "Manage", icon: <WorkOutline />, path: null },
-            { label: "Analytics", icon: <Timeline />, path: null },
-            { label: "Reports", icon: <Report />, path: null },
+            { label: "Training", icon: <TrendingUp />, path: null },
+            { label: "Hyperparameters", icon: <Tune />, path: null },
+            { label: "Metrics", icon: <BarChart />, path: null },
         ],
     },
 ];

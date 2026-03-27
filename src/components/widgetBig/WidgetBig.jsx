@@ -1,5 +1,5 @@
 import "./widgetBig.css";
-import { transactions } from "../../sampleData";
+import { experiments } from "../../sampleData";
 
 const StatusBadge = ({ type }) => (
     <span className={`statusBadge ${type.toLowerCase()}`}>{type}</span>
@@ -9,30 +9,27 @@ export default function WidgetBig() {
     return (
         <div className="widgetBig">
             <div className="widgetBigHeader">
-                <h3 className="widgetBigTitle">Latest Transactions</h3>
-                <button className="widgetBigViewAll">View All</button>
+                <h3 className="widgetBigTitle">Recent Experiments</h3>
             </div>
             <table className="widgetBigTable">
                 <thead>
                     <tr>
-                        <th>Customer</th>
-                        <th>Date</th>
-                        <th>Amount</th>
+                        <th>Experiment</th>
+                        <th>Model</th>
+                        <th>RMSE</th>
                         <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {transactions.map(t => (
-                        <tr key={t.id}>
+                    {experiments.map(e => (
+                        <tr key={e.id}>
                             <td>
-                                <div className="widgetBigUser">
-                                    <img src={t.avatar} alt={t.name} className="widgetBigImg" />
-                                    <span>{t.name}</span>
-                                </div>
+                                <div className="expId">{e.id}</div>
+                                <div className="expDataset">{e.dataset}</div>
                             </td>
-                            <td className="widgetBigDate">{t.date}</td>
-                            <td className="widgetBigAmount">{t.amount}</td>
-                            <td><StatusBadge type={t.status} /></td>
+                            <td className="expModel">{e.model}</td>
+                            <td className="expMetric">{e.rmse}</td>
+                            <td><StatusBadge type={e.status} /></td>
                         </tr>
                     ))}
                 </tbody>
